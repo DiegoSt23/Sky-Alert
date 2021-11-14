@@ -52,16 +52,16 @@ function numberToOrdinal(num) {
 
   } else if (numArr[numArr.length - 1] === 2 && numArr[numArr.length - 2] !== 1) {
     // Si el ultimo numero es igual a 2 y si el numero anterior a este es diferente de 1 devolvemos numArr + nd convertido a string,
-    // la segunda verificacion es porque todos los numeros que terminen en 2 excepto 12 deben de terminar con st, por ejemplo 22, 32, 102, 10002; etc.
+    // la segunda verificacion es porque todos los numeros que terminen en 2 excepto 12 deben de terminar con st.
     return `${numArr.join("")}nd`
 
   } else if (numArr[numArr.length - 1] === 3 && numArr[numArr.length - 2] !== 1) {
     // Si el ultimo numero es igual a 3 y si el numero anterior a este es diferente de 1 devolvemos numArr + rd convertido a string,
-    // la segunda verificacion es porque todos los numeros que terminen en 3 excepto 13 deben de terminar con rd, por ejemplo 23, 33, 103, 10003; etc.
+    // la segunda verificacion es porque todos los numeros que terminen en 3 excepto 13 deben de terminar con rd.
     return `${numArr.join("")}rd`
 
   } else {
-    // Si no cumple con ninguna de las condiciones de arriba absolutamente todos deben de llevar th,
+    // Si no cumple con ninguna de las condiciones de arriba absolutamente todos deben de terminar con th,
     // asi que devolvemos numArr + th convertido a string.
     return `${numArr.join("")}th`
   }

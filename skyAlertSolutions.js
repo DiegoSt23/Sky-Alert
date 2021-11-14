@@ -66,8 +66,5 @@ function calculate(rpn) {
 };
 
 
-// FUNCIONES CON COMENTARIOS
-
-
 
 
